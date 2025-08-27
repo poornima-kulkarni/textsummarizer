@@ -81,11 +81,6 @@ pip freeze > requirements.txt
 
 ---
 
-## 🖼️ Screenshot
-(Add a screenshot of your app UI here once it’s running)
-
----
-
 ## 🌐 Deployment
 You can deploy this project to:
 - **Heroku**

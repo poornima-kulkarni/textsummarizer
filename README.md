@@ -50,15 +50,6 @@ NLTK
 (You can freeze dependencies into requirements.txt using:)
 
 pip freeze > requirements.txt
-🖼️ Screenshot
-(Add a screenshot of your app UI here once it’s running)
 
-🌐 Deployment
-You can deploy this project to:
-
-Heroku
-PythonAnywhere
-Railway
-Vercel (with serverless Django)
 📜 License
 This project is open-source and free to use.

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="{% static 'summary/style.css' %}">
+</head>
+<body>
+    <h1>📝 Extractive Text Summarizer</h1>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <textarea name="input_text" placeholder="Paste your text here..."></textarea>
+        <br>
+        <button type="submit">Summarize</button>
+    </form>
+
+    {% if summary_list %}
+    <div class="summary-box">
+        <h2>Summary:</h2>
+        <ul>
+            {% for sentence in summary_list %}
+                <li>{{ sentence }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</body>
+</html>
